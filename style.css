@@ -1,0 +1,27 @@
+a {
+    background-color: powderblue;
+    transition: background-color .5s;
+}
+
+a:hover {
+    background-color: gold;
+}
+
+body {
+    width: 500px;
+    height: 1400px;
+    margin: 0 auto;
+}
+
+h1 {
+    position: fixed;
+    top: 0;
+    width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 10px;
+}
+
+p:nth-of-type(1) {
+    margin-top: 60px;
+}
