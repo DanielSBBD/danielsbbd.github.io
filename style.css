@@ -1,27 +1,113 @@
-a {
-    background-color: powderblue;
-    transition: background-color .5s;
-}
-
-a:hover {
-    background-color: gold;
+html {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-    width: 500px;
-    height: 1400px;
-    margin: 0 auto;
+    margin: 0;
+    background-image: url(images/background.jpg);
+    background-attachment: fixed;
+}
+
+header {
+    background: rgb(112, 0, 0);
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 h1 {
-    position: fixed;
-    top: 0;
-    width: 500px;
-    margin: 0 auto;
-    background: white;
-    padding: 10px;
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
 }
 
-p:nth-of-type(1) {
-    margin-top: 60px;
+h2 {
+    color: white;
+    text-align: center;
+}
+
+article {
+    padding: 10px;
+    margin: 10px;
+    background: rgb(75, 0, 0);
+    flex: 2 1 300px;
+    border-radius: 25px;
+    color: white;
+}
+
+nav {
+    width: 100%;
+    top: -50px;
+    overflow-y: hidden;
+    background-color: green;
+    position: fixed;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    transition: 0.5s;
+}
+
+nav a {
+    padding: 8px 8px 8px 8px;
+    color: white;
+    transition: 1s;
+    font-size: larger;
+    font-weight: bold;
+    background-color: rgb(80, 0, 0);
+    flex: 2 1 10cm;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: black;
+}
+
+.icon {
+    width: 1.5cm;
+    height: 1.5cm;
+    position: fixed;
+    top: 20px;
+    cursor: pointer;
+}
+
+#menu {
+    right: 30px;
+}
+
+#home {
+    left: 30px;
+}
+
+#splash {
+    height: 900px;
+    width: 100%;
+}
+
+#info {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#about {
+    display: inline;
+}
+
+#aboutimage {
+    position: absolute;
+    width: 300px;
+    height: fit-content;
+    top: 100px;
+    left: calc(50% - 150px);
+}
+
+#aboutcontent {
+    position: absolute;
+    width: 300px;
+    top: 480px;
+    left: calc(50% - 150px);
 }

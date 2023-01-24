@@ -1,14 +1,85 @@
 <!DOCTYPE html>
 <html lang="en-ZA">
-    <head>
-        <meta charset="utf-8">
-        <title>Skeleton Page</title>
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Welcome to the Skeleton Page</h1>
-        <p>Click <a href="https://www.google.com/search?q=skelly+pics&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiQmqzMs938AhUWOcAKHfqKDg4Q_AUoAXoECAEQAw&biw=958&bih=963&dpr=1">here</a> for skelly pics</p>
-        <a href="#">Try hovering over this link.</a>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <title>Skeleton Page</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Skeleton Page</h1>
+        <img class="icon" id="menu" src="images/menu.png" alt="The menu icon" onclick="toggleNav()">
+        <a href="index.html">
+            <img class="icon" id="home" src="images/skull.png" alt="The home icon">
+        </a>
+    </header>
+
+    <nav id="navbar">
+        <a href="about.html">About</a>
+        <a href="#info">Info</a>
+        <a href="index.html">Gallery</a>
+        <a href="index.html">Contact</a>
+    </nav>
+
+    <section id="splash">
+        <img src="images/skelly.webp">
+    </section>
+    
+    <section id="info">
+        <article>
+            <h2>Leadership</h2>
+        
+            <p>
+                <q>Back in my day boyo, I was the Captain of a whole fleet!</q>
+            </p>
+        </article>
+    
+        <article>
+            <h2>Reliability</h2>
+        
+            <p>
+                <q>You know how many times you've killed me, boyo? Neither do I, but I'm still going!</q>
+            </p>
+        </article>
+        
+        <article>
+            <h2>Strength</h2>
+        
+            <p>
+                <q>I drink a big glass of milk every day! How else am I gonna keep these strong bones?</q>
+            </p>
+        </article>
+
+        <article>
+            <h2>Integrity</h2>
+        
+            <p>
+                <q>I am an individual of some integrity, boyo, and protect my sources with my life! You'll have to kill me if you want to make me squeal!</q>
+            </p>
+        </article>
+
+        <article>
+            <h2>Good Looks</h2>
+        
+            <p>
+                <q>I mean, have you <i>seen</i> these cheekbones, boyo?</q>
+            </p>
+        </article>
+    </section>
+</body>
+
 </html>
+
+<script>
+    function toggleNav() {
+        if (document.getElementById("navbar").style.top == "100px") {
+            document.getElementById("navbar").style.top = "-50px";
+        }
+        else {
+            document.getElementById("navbar").style.top = "100px";
+        }
+    }
+</script>
