@@ -1,3 +1,5 @@
+/* General settings */
+
 html {
     font-family: sans-serif;
     scroll-behavior: smooth;
@@ -22,6 +24,7 @@ h1 {
     color: white;
     line-height: 100px;
     margin: 0;
+    font-size: xxx-large;
 }
 
 h2 {
@@ -36,13 +39,13 @@ article {
     flex: 2 1 300px;
     border-radius: 25px;
     color: white;
+    text-align: center;
 }
 
 nav {
     width: 100%;
-    top: -50px;
+    top: -200px;
     overflow-y: hidden;
-    background-color: green;
     position: fixed;
     display: flex;
     flex-flow: row wrap;
@@ -55,7 +58,7 @@ nav a {
     padding: 8px 8px 8px 8px;
     color: white;
     transition: 1s;
-    font-size: larger;
+    font-size: xxx-large;
     font-weight: bold;
     background-color: rgb(80, 0, 0);
     flex: 2 1 10cm;
@@ -76,13 +79,12 @@ nav a:hover {
 }
 
 .gallery {
-    position: absolute;
-    top: 100px;
     width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     text-align: center;
+    padding-top: 110px;
 }
 
 .narrowimage {
@@ -159,11 +161,13 @@ nav a:hover {
 }
 
 #splash {
-    height: 900px;
+    padding-top: 100px;
+    height: 800px;
     width: 100%;
 }
 
 #info {
+    margin-top: 0px;
     display: flex;
     flex-flow: row wrap;
     background-color: rgba(0, 0, 0, 0.5);
@@ -187,4 +191,16 @@ nav a:hover {
     top: 480px;
     left: calc(50% - 200px);
     font-size: larger;
+}
+
+/* Desktop specific settings */
+
+@media only screen and (min-width: 950px){
+    h1 {
+        font-size: xx-large;
+    }
+
+    nav a {
+        font-size: larger;
+    }
 }
