@@ -195,7 +195,7 @@ nav a:hover {
 
 /* Desktop specific settings */
 
-@media only screen and (min-width: 950px){
+@media only screen and (min-width: 70em){
     h1 {
         font-size: xx-large;
     }
