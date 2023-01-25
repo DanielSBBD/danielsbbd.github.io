@@ -37,7 +37,7 @@ article {
     margin: 10px;
     background: rgb(75, 0, 0);
     flex: 2 1 300px;
-    border-radius: 25px;
+    border-radius: 10px;
     color: white;
     text-align: center;
 }
@@ -68,6 +68,36 @@ nav a {
 
 nav a:hover {
     background-color: black;
+}
+
+form {
+    display: inline-block;
+}
+
+input, textarea {
+    color: white;
+    background-color: black;
+}
+
+input, label, textarea{
+    display: block;
+    width: 200px;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: black;
+}
+
+button:hover {
+    translate: 0px 100px;
+}
+
+aside {
+    position: relative;
+    top: 50px;
 }
 
 .icon {
@@ -191,6 +221,17 @@ nav a:hover {
     top: 480px;
     left: calc(50% - 200px);
     font-size: larger;
+}
+
+#contact {
+    position: absolute;
+    width: 400px;
+    top: 100px;
+    left: calc(50% - 220px);
+}
+
+#troll {
+    position: relative;
 }
 
 /* Desktop specific settings */
