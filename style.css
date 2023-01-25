@@ -14,7 +14,7 @@ header {
     height: 100px;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
 }
 
 h1 {
@@ -48,6 +48,7 @@ nav {
     flex-flow: row wrap;
     justify-content: space-evenly;
     transition: 0.5s;
+    z-index: 1;
 }
 
 nav a {
@@ -72,6 +73,81 @@ nav a:hover {
     position: fixed;
     top: 20px;
     cursor: pointer;
+}
+
+.gallery {
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+.narrowimage {
+    width: 100%;
+}
+
+.wideimage {
+    padding: 4% 0;
+    width: 100%;
+}
+
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.box2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.box3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.box4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.box5 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.box6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.box7 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.box8 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
 
 #menu {
@@ -99,15 +175,16 @@ nav a:hover {
 
 #aboutimage {
     position: absolute;
-    width: 300px;
-    height: fit-content;
+    width: 8cm;
+    height: auto;
     top: 100px;
     left: calc(50% - 150px);
 }
 
 #aboutcontent {
     position: absolute;
-    width: 300px;
+    width: 400px;
     top: 480px;
-    left: calc(50% - 150px);
+    left: calc(50% - 200px);
+    font-size: larger;
 }
