@@ -27,6 +27,7 @@ h1 {
     font-size: xxx-large;
     border-style: none none solid none;
     border-color: black;
+    background-image: linear-gradient(rgb(116, 0, 0), rgb(65, 0, 0));
 }
 
 h2 {
@@ -44,6 +45,7 @@ article {
     text-align: center;
     border-color: black;
     border-style: solid;
+    background-image: linear-gradient(rgb(65, 0, 0), rgb(116, 0, 0));
 }
 
 nav {
