@@ -25,6 +25,8 @@ h1 {
     line-height: 100px;
     margin: 0;
     font-size: xxx-large;
+    border-style: none none solid none;
+    border-color: black;
 }
 
 h2 {
@@ -35,11 +37,13 @@ h2 {
 article {
     padding: 10px;
     margin: 10px;
-    background: rgb(75, 0, 0);
+    background: rgba(75, 0, 0);
     flex: 2 1 300px;
     border-radius: 10px;
     color: white;
     text-align: center;
+    border-color: black;
+    border-style: solid;
 }
 
 nav {
@@ -64,6 +68,8 @@ nav a {
     flex: 2 1 10cm;
     text-align: center;
     text-decoration: none;
+    border-style: none none solid none;
+    border-color: black;
 }
 
 nav a:hover {
