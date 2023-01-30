@@ -25,8 +25,11 @@
     </nav>
 
     <section class="gallery">
-        <article class="box1">
+        <article class="box1" onmouseenter="enterAction()" onmouseleave="leaveAction()">
             <img class="wideimage" src="images/gallery/model_sheet.webp">
+            <aside id="info1">
+                Skelly's in-game model
+            </aside>
         </article>
 
         <article class="box2">
@@ -61,13 +64,4 @@
 
 </html>
 
-<script>
-    function toggleNav() {
-        if (document.getElementById("navbar").style.top == "100px") {
-            document.getElementById("navbar").style.top = "-200px";
-        }
-        else {
-            document.getElementById("navbar").style.top = "100px";
-        }
-    }
-</script>
+<script type="text/javascript" src="scripts.js"></script>

@@ -105,7 +105,16 @@ button:hover {
 
 aside {
     position: relative;
-    top: 3.125rem;
+    bottom: 2.6rem;
+    left: 50%;
+    width: 0%;
+    height: 5%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-image: linear-gradient(rgb(53, 53, 53), rgb(17, 17, 17));
+    border-style: solid;
+    border-color: rgb(116, 0, 0);
+    transition: 1s;
 }
 
 .icon {
@@ -236,6 +245,11 @@ aside {
     width: 25rem;
     top: 6.25rem;
     left: calc(50% - 13.75rem);
+}
+
+#trollMsg {
+    position: relative;
+    top: 3.125rem;
 }
 
 #troll {
