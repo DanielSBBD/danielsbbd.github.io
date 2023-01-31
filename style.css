@@ -35,7 +35,7 @@ h2 {
     text-align: center;
 }
 
-article {
+article  {
     padding: .625rem;
     margin: .625rem;
     background: rgba(75, 0, 0);
@@ -101,20 +101,6 @@ button {
 
 button:hover {
     translate: 0px 6.25rem;
-}
-
-aside {
-    position: relative;
-    bottom: 2.6rem;
-    left: 50%;
-    width: 0%;
-    height: 5%;
-    overflow: hidden;
-    white-space: nowrap;
-    background-image: linear-gradient(rgb(53, 53, 53), rgb(17, 17, 17));
-    border-style: solid;
-    border-color: rgb(116, 0, 0);
-    transition: 1s;
 }
 
 .icon {
@@ -197,6 +183,21 @@ aside {
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 5;
+}
+
+.hidey {
+    position: relative;
+    bottom: 2.6rem;
+    left: 50%;
+    width: 0%;
+    height: 5%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-image: linear-gradient(rgb(53, 53, 53), rgb(17, 17, 17));
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: .625rem;
+    transition: 0.5s;
 }
 
 #menu {

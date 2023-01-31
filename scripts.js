@@ -9,13 +9,13 @@ function toggleNav() {
     }
 }
 
-function enterAction() {
-    document.getElementById("info1").style.width = "40%";
-    document.getElementById("info1").style.left = "30%";
-    document.getElementById("info1").style['border-color'] = "black";
+function enterAction(id) {
+    document.getElementById("info"+id).style.width = "80%";
+    document.getElementById("info"+id).style.left = "10%";
+    document.getElementById("info"+id).style['border-color'] = "black";
 }
-function leaveAction() {
-    document.getElementById("info1").style.width = "0%";
-    document.getElementById("info1").style.left = "50%";
-    document.getElementById("info1").style['border-color'] = "rgb(116, 0, 0)";
+function leaveAction(id) {
+    document.getElementById("info"+id).style.width = "0%";
+    document.getElementById("info"+id).style.left = "50%";
+    document.getElementById("info"+id).style['border-color'] = "rgba(0, 0, 0, 0)";
 }
