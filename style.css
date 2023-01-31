@@ -221,12 +221,10 @@ article:has(> .hidey) {
 
 #splash img {
     position: absolute;
-    bottom: -4rem;
     z-index: -1;
     object-fit: cover;
     width: 100%;
     max-width: fit-content;
-    height: auto;
 }
 
 #info {

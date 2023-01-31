@@ -1,11 +1,11 @@
 window.onload = getJoke;
 
 function toggleNav() {
-    if (document.getElementById("navbar").style.top == "100px") {
-        document.getElementById("navbar").style.top = "-200px";
+    if (document.getElementsByTagName("nav")[0].style.top == "6.25rem") {
+        document.getElementsByTagName("nav")[0].style.top = "-12.5rem";
     }
     else {
-        document.getElementById("navbar").style.top = "100px";
+        document.getElementsByTagName("nav")[0].style.top = "6.25rem";
     }
 }
 
