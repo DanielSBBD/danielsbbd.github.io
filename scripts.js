@@ -2,7 +2,7 @@ window.onload = getJoke;
 
 function toggleNav() {
     if (document.getElementsByTagName("nav")[0].style.top == "6.25rem") {
-        document.getElementsByTagName("nav")[0].style.top = "-12.5rem";
+        document.getElementsByTagName("nav")[0].style.top = "-17.5rem";
     }
     else {
         document.getElementsByTagName("nav")[0].style.top = "6.25rem";
@@ -21,8 +21,8 @@ function leaveAction(id) {
     document.getElementById("info"+id).style['border-color'] = "rgba(0, 0, 0, 0)";
 }
 
-var x = 0;
-var y = 0;
+let x = 0;
+let y = 0;
 
 function moveButton() {
     let xOff, yOff = 0;
@@ -45,6 +45,6 @@ async function getJoke() {
         const reg = /[Cc]huck(?: [Nn]orris)?/g;
         quote = quote.replaceAll("s\'", "s\'s");
         quote = quote.replaceAll(reg, "Skelly");
-        document.getElementById("quote").innerHTML = quote;
+        document.getElementById("quote").innerText = quote;
     }
 }

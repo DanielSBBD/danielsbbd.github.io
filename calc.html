@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="frontPage">
     <header>
         <h1>Skeleton Page</h1>
         <img class="icon" id="menu" src="images/menu.png" alt="The menu icon" onclick="toggleNav()">
@@ -24,27 +24,35 @@
         <a href="contact.html">Contact</a>
         <a href="calc.html">Calculator</a>
     </nav>
-    
-    <article id="contact">
-        <form>
+
+    <section id="calcBox">
+        <article>
+            Calculator
             <section>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name">
+                <input type="text">
+                <button>%</button>
+                <button>CE</button>
+                <button>C</button>
+                <button>÷</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>x</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>-</button>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>+</button>
+                <button>±</button>
+                <button>0</button>
+                <button>.</button>
+                <button>=</button>
             </section>
-            <section>
-                <label for="mail">E-mail:</label>
-                <input type="email" id="mail" name="user_mail">
-            </section>
-            <section>
-                <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message"></textarea>
-            </section>
-            <aside id="trollMsg">Gottem</aside>
-            <section id="troll">
-                <button type="button" onmouseenter="moveButton()" style="margin-top: 20px;">Send</button>
-            </section>
-        </form>
-    </article>
+        </article>
+    </section>
 </body>
 
 </html>
