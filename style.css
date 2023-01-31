@@ -97,10 +97,7 @@ button {
     height: 3.125rem;
     color: white;
     background-color: black;
-}
-
-button:hover {
-    translate: 0px 6.25rem;
+    transition: 0.2s;
 }
 
 .icon {
@@ -218,7 +215,7 @@ article:has(> .hidey) {
 
 #splash {
     padding-top: 6.25rem;
-    height: 50rem;
+    height: 49rem;
     width: 100%;
 }
 
