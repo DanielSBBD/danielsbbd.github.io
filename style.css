@@ -185,12 +185,16 @@ button:hover {
     grid-row-end: 5;
 }
 
-.hidey {
+article:has(> .hidey) {
     position: relative;
-    bottom: 2.6rem;
+}
+
+.hidey {
+    position: absolute;
+    bottom: 0.5rem;
     left: 50%;
     width: 0%;
-    height: 5%;
+    height: 2rem;
     overflow: hidden;
     white-space: nowrap;
     background-image: linear-gradient(rgb(53, 53, 53), rgb(17, 17, 17));
@@ -198,6 +202,10 @@ button:hover {
     border-color: rgba(0, 0, 0, 0);
     border-radius: .625rem;
     transition: 0.5s;
+}
+
+.hidey p {
+    margin-top: 0.5rem;
 }
 
 #menu {
@@ -212,6 +220,16 @@ button:hover {
     padding-top: 6.25rem;
     height: 50rem;
     width: 100%;
+}
+
+#splash img {
+    position: absolute;
+    bottom: -4rem;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    max-width: fit-content;
+    height: auto;
 }
 
 #info {
