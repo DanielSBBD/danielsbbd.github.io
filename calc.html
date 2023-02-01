@@ -26,11 +26,29 @@
     </nav>
 
     <section id="calcBox">
-        <article id="calculator">
+        <article>
             Calculator
-            <section>
-                <input type="text" id="input">
+            <input type="text" id="input">
+            <section class="grid">
+                <button onclick="enter('7')">7</button>
+                <button onclick="enter('8')">8</button>
+                <button onclick="enter('9')">9</button>
+                <button onclick="enter('/')">÷</button>
+                <button onclick="enter('4')">4</button>
+                <button onclick="enter('5')">5</button>
+                <button onclick="enter('6')">6</button>
+                <button onclick="enter('*')">x</button>
+                <button onclick="enter('1')">1</button>
+                <button onclick="enter('2')">2</button>
+                <button onclick="enter('3')">3</button>
+                <button onclick="enter('-')">-</button>
+                <button onclick="enter('.')">.</button>
+                <button onclick="enter('0')">0</button>
                 <button onclick="calculate()">=</button>
+                <button onclick="enter('+')">+</button>
+                <button onclick="enter('\(')">(</button>
+                <button onclick="enter('\)')">)</button>
+                <button onclick="cl()">C</button>
             </section>
         </article>
     </section>

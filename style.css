@@ -205,6 +205,17 @@ article:has(> .hidey) {
     margin-top: 0.5rem;
 }
 
+.grid {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid > button {
+    padding: 1rem;
+    background-color: black;
+}
+
 #menu {
     right: 1.875rem;
 }
@@ -271,20 +282,28 @@ article:has(> .hidey) {
 }
 
 #calcBox {
-    position: absolute;
+    width: 10rem;
     display: flex;
     align-items: center;
-    justify-content: center;
-    top: 6.25rem;
-    width: 100%;
+    padding-top: 7rem;
+    font-size: xx-large;
 }
 
 #calcBox article {
-    justify-content: center;
+    flex-grow: 1;
 }
 
-#calculator {
-    display: inline;
+#calcBox article input {
+    font-size: x-large;
+}
+
+#calcBox article section button {
+    font-size: x-large;
+}
+
+#input {
+    width: 100%;
+    text-align: center;
 }
 
 /* Desktop specific settings */

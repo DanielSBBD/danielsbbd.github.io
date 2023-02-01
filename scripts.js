@@ -37,6 +37,18 @@ function moveButton() {
     document.getElementsByTagName("button")[0].style.transform = `translate(${x}px,${y}px)`;
 }
 
+function enter(char) {
+    el = document.getElementById("input");
+    if(el.value[0]=='=') {
+        el.value="";
+    }
+    document.getElementById("input").value += char;
+}
+
+function cl() {
+    document.getElementById("input").value = "";
+}
+
 function calculate() {
     el = document.getElementById("input");
     input = el.value;
