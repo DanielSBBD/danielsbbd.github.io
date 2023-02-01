@@ -277,11 +277,14 @@ article:has(> .hidey) {
     justify-content: center;
     top: 6.25rem;
     width: 100%;
-    background-color: antiquewhite;
 }
 
 #calcBox article {
     justify-content: center;
+}
+
+#calculator {
+    display: inline;
 }
 
 /* Desktop specific settings */
