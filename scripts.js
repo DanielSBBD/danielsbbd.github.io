@@ -49,6 +49,11 @@ function cl() {
     document.getElementById("input").value = "";
 }
 
+function backspace() {
+    el = document.getElementById("input")
+    el.value = el.value.substring(0, el.value.length-1);
+}
+
 function calculate() {
     el = document.getElementById("input");
     input = el.value;
