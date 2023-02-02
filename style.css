@@ -1,5 +1,11 @@
 /* General settings */
 
+:root {
+    --operators: rgb(75, 48, 48);
+    --misc: rgb(48, 48, 48);
+    --equals: rgb(65, 65, 65);
+}
+
 html {
     font-family: sans-serif;
     scroll-behavior: smooth;
@@ -282,23 +288,26 @@ article:has(> .hidey) {
 }
 
 #calcBox {
-    width: 10rem;
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding-top: 7rem;
-    font-size: xx-large;
+    font-size: 2cm;
 }
 
 #calcBox article {
-    flex-grow: 1;
+    flex-grow: 0;
 }
 
 #calcBox article input {
-    font-size: x-large;
+    font-size: 1.5cm;
 }
 
 #calcBox article section button {
-    font-size: x-large;
+    font-size: 2cm;
+    width: 8rem;
+    height: 8rem;
 }
 
 #input {
