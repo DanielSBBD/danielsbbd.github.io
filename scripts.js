@@ -30,7 +30,7 @@ function moveButton() {
         theta = Math.random()*2*Math.PI;
         xOff = 300*Math.cos(theta);
         yOff = 300*Math.sin(theta);
-    } while((x + xOff) < -window.innerWidth*0.4 || (x + xOff) > window.innerWidth*0.4 || (y + yOff) < -window.innerHeight*0.2 || (y + yOff) > window.innerHeight*0.6)
+    } while((x + xOff) < -window.innerWidth*0.3 || (x + xOff) > window.innerWidth*0.3 || (y + yOff) < -window.innerHeight*0.2 || (y + yOff) > window.innerHeight*0.3)
 
     x += xOff;
     y += yOff;

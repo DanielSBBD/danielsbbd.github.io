@@ -4,6 +4,8 @@
     --operators: rgb(75, 48, 48);
     --misc: rgb(48, 48, 48);
     --equals: rgb(65, 65, 65);
+    --backgroundA: rgb(65, 0, 0);
+    --backgroundB: rgb(116, 0, 0);
 }
 
 html {
@@ -33,7 +35,7 @@ h1 {
     font-size: xxx-large;
     border-style: none none solid none;
     border-color: black;
-    background-image: linear-gradient(rgb(116, 0, 0), rgb(65, 0, 0));
+    background-image: linear-gradient(var(--backgroundB), var(--backgroundA));
 }
 
 h2 {
@@ -51,7 +53,7 @@ article  {
     text-align: center;
     border-color: black;
     border-style: solid;
-    background-image: linear-gradient(rgb(65, 0, 0), rgb(116, 0, 0));
+    background-image: linear-gradient(var(--backgroundA), var(--backgroundB));
 }
 
 nav {
@@ -272,15 +274,32 @@ article:has(> .hidey) {
 }
 
 #contact {
-    position: absolute;
-    width: 25rem;
-    top: 6.25rem;
-    left: calc(50% - 13.75rem);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7rem;
+    font-size: 0.5cm;
+}
+
+#contact article {
+    flex-grow: 0;
+    font-size: 1cm;
+}
+
+#contact article form section button {
+    height: 5rem;
+    width: 20rem;
+}
+
+#contact article form section input, textarea, button {
+    font-size: 1.5cm;
+    width: 50rem;
 }
 
 #trollMsg {
     position: relative;
-    top: 3.125rem;
+    top: 4rem;
 }
 
 #troll {
