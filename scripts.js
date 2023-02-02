@@ -1,4 +1,27 @@
-window.onload = getJoke;
+window.onload = loadNav;
+
+function loadNav() {
+    let page = document.getElementsByTagName("body")[0]
+    page.innerHTML = 
+    `<div>
+        <header>
+            <h1>The Skelly Page</h1>
+            <img class="icon" id="menu" src="images/menu.png" alt="The menu icon" onclick="toggleNav()"/>
+            <a href="index.html">
+                <img class="icon" id="home" src="images/skull.png" alt="The home icon"/>
+            </a>
+        </header>
+
+        <nav>
+            <a href="about.html">About</a>
+            <a href="index.html#info">Info</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="calc.html">Calculator</a>
+        </nav>
+    </div>` + page.innerHTML
+    getJoke();
+}
 
 function toggleNav() {
     if (document.getElementsByTagName("nav")[0].style.top == "6.25rem") {
